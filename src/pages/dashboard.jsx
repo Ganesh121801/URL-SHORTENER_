@@ -77,6 +77,7 @@ const Dashboard = () => {
         />
         <Filter className="absolute top-2 right-2 p-1" />
       </div>
+      
       {error && <Error message={error?.message} />}
       {(filteredUrls || []).map((url, i) => (
         <LinkCard key={i} url={url} fetchUrls={fnUrls} />
